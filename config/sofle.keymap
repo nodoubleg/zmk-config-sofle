@@ -39,14 +39,14 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-    &kp ESC  &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                        &kp N6     &kp N7     &kp N8     &kp N9    &kp N0      &none
-    &kp TAB   &kp Q     &kp W     &kp E     &kp R   &kp T                         &kp Y      &kp U      &kp I      &kp O     &kp P    &kp RET
- &kp LSHIFT   &kp A     &kp S     &kp D     &kp F   &kp G                         &kp H      &kp J      &kp K      &kp L  &kp SEMI    &kp SQT
-  &kp LCTRL   &kp Z     &kp X     &kp C     &kp V   &kp B  &kp C_MUTE  &kp BSPC   &kp N      &kp M  &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
-                     &kp LGUI  &kp LGUI  &kp LALT   &mo 1   &kp SPACE  &kp BSPC   &mo 2  &kp RCTRL   &kp RALT  &kp UNDER
+    &kp ESC  &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                        &kp N6     &kp N7     &kp N8           &kp N9    &kp N0      &none
+    &kp TAB   &kp Q     &kp W     &kp E     &kp R   &kp T                         &kp Y      &kp U      &kp I            &kp O     &kp P    &kp RET
+ &kp LSHIFT   &kp A     &kp S     &kp D     &kp F   &kp G                         &kp H      &kp J      &kp K            &kp L  &kp SEMI    &kp SQT
+  &kp LCTRL   &kp Z     &kp X     &kp C     &kp V   &kp B  &kp C_MUTE  &kp BSPC   &kp N      &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp UNDER
+                     &kp LGUI  &kp LGUI  &kp LALT   &mo 1   &kp SPACE  &kp BSPC   &mo 2  &kp RCTRL   &kp RALT  &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         lower_layer {
@@ -59,14 +59,14 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-    &trans    &kp F1      &kp F2       &kp F3    &kp F4     &kp F5                     &kp F6    &kp F7           &kp F8     &kp F9   &kp F10   &kp F11
- &kp GRAVE    &kp UP      &kp N2       &kp N3    &kp N4     &kp N5                     &kp N6    &kp N7           &kp N8     &kp N9    &kp N0   &kp F12
-    &trans  &kp DOWN   &kp RIGHT     &kp HASH  &kp DLLR  &kp PRCNT                  &kp CARET  &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp RPAR  &kp PIPE
-    &trans  &kp K_PP  &kp K_NEXT  &kp KP_PLUS  &kp LBRC   &kp RBRC  &trans  &trans   &kp LBKT  &kp RBKT         &kp SEMI  &kp COLON  &kp BSLH    &trans
-                          &trans       &trans    &trans     &trans  &trans  &trans     &trans    &trans           &trans     &trans
+    &trans          &kp F1            &kp F2         &kp F3    &kp F4     &kp F5                     &kp F6    &kp F7           &kp F8     &kp F9   &kp F10   &kp F11
+ &kp GRAVE     &kp PAGE_UP            &kp UP  &kp PAGE_DOWN    &kp N4     &kp N5                     &kp N6    &kp N7           &kp N8     &kp N9    &kp N0   &kp F12
+    &trans        &kp LEFT          &kp DOWN      &kp RIGHT  &kp DLLR  &kp PRCNT                  &kp CARET  &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp RPAR  &kp PIPE
+    &trans  &kp K_PREVIOUS  &kp K_PLAY_PAUSE     &kp K_NEXT  &kp LBRC   &kp RBRC  &trans  &trans   &kp LBKT  &kp RBKT         &kp SEMI  &kp COLON  &kp BSLH    &trans
+                                      &trans         &trans    &trans     &trans  &trans  &trans     &trans    &trans           &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         raise_layer {
@@ -85,7 +85,7 @@
                                  &trans        &trans        &trans        &trans  &trans  &trans     &trans    &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         // ------------------------------------------------------------------------------------------------------------
