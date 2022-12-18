@@ -49,7 +49,7 @@
                      &kp ENTER  &kp LGUI  &kp LALT   &mo 1   &kp SPACE  &kp BSPC   &mo 2  &kp RCTRL   &kp RALT  &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN C_AC_SCROLL_UP &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         lower_layer {
